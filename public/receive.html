@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:)</title>
+    <script src="./receive.js" defer></script>
+</head>
+<body>
+    <form>
+        <label for="senderip">Sender ip</label>
+        <input type="text" name="senderip" id="senderip">
+        <br />
+
+        <label for="portinput">Port of sender</label>
+        <input type="text" name="portinput" id="portinput">
+        <br />
+
+        <label for="outdir">Output folder name</label>
+        <input type="text" name="outdir" id="outdir">
+        <br />
+
+        <label for="progressjson">Progress as JSON (optional)</label>
+        <textarea name="progressjson" id="progressjson" cols="30" rows="50"></textarea>
+        <br />
+
+        <input type="submit" name="submit" id="submit">
+        <br />
+    </form>
+    <h3 id="result"></h3>
+    <p>
+        <span id="bytecount">0</span> GB received.
+    </p>
+    <p>
+        Received <span id="receivedfile"></span>
+    </p>
+    <button id="stop" disabled>Stop transfer</button>
+</body>
+</html>
